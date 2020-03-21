@@ -1,6 +1,11 @@
 
 $color-orange:#FF8F26;
 $color-primary: #AA67CF;
+
+@font-face {
+    font-family: Work;
+    src: url(../WorkSans.ttf);
+  }
 *{
 
     margin: 0;
@@ -12,7 +17,7 @@ $color-primary: #AA67CF;
 
 html{
     font-size: 16px;
-    font-family: 'Work Sans';
+    font-family: 'Work';
     min-height: 100%;
     transition:all 0.25s;
     scroll-behavior: smooth;
