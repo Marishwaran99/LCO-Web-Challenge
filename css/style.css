@@ -85,11 +85,8 @@ header nav .nav__link:hover {
   font-weight: bold;
 }
 
-section {
-  padding: 2rem 0;
-}
-
 .section__title {
+  margin-top: 4rem;
   font-size: 2rem;
   font-weight: 300;
 }
@@ -169,7 +166,6 @@ main .landing__wrapper--img div:nth-child(3) {
 }
 
 main .about__wrapper {
-  margin: 3rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -180,7 +176,7 @@ main .about__wrapper {
 }
 
 main .about__card {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 main .about__card-item {
@@ -218,6 +214,10 @@ main .about__card--text p {
   line-height: 1.5rem;
 }
 
+main .about__card:last-child {
+  margin-bottom: 0;
+}
+
 main .tournament__wrappper {
   text-align: center;
   display: -webkit-box;
@@ -243,6 +243,10 @@ main .tournament__wrappper p {
   font-size: 1.2rem;
 }
 
+main .team__carousel img {
+  height: 300px;
+}
+
 main .faq__wrapper h4 {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
@@ -256,6 +260,10 @@ main .faq__wrapper p {
 
 main .faq__question {
   margin-bottom: 2rem;
+}
+
+main .faq__question:last-child {
+  margin-bottom: 0;
 }
 
 main .contact__wrapper {
@@ -300,5 +308,23 @@ footer {
   margin-top: 2rem;
   background-color: #FF8F26;
   padding: 1rem 0;
+}
+
+footer p {
+  font-weight: 500;
+}
+
+.carousel {
+  width: 90%;
+  margin: 0px auto;
+}
+
+.slick-slide {
+  margin: 10px;
+}
+
+.slick-slide img {
+  width: 100%;
+  border: 2px solid #fff;
 }
 /*# sourceMappingURL=style.css.map */
