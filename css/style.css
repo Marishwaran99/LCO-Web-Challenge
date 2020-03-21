@@ -6,6 +6,7 @@
 * {
   margin: 0;
   padding: 0;
+  border: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-transition: all 0.25s;
@@ -66,6 +67,42 @@ header nav .nav__wrapper {
           align-items: center;
 }
 
+header nav .nav__btn {
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 48px;
+  height: 48px;
+  display: none;
+}
+
+header nav .nav__btn div {
+  margin-bottom: 6px;
+}
+
+header nav .nav__btn div:nth-child(1) {
+  width: 36px;
+  height: 4px;
+  background-color: black;
+}
+
+header nav .nav__btn div:nth-child(2) {
+  width: 24px;
+  height: 4px;
+  background-color: black;
+}
+
 header nav .nav__logo {
   width: 64px;
 }
@@ -103,7 +140,7 @@ header nav .nav__link:hover {
 .section__title {
   margin-top: 4rem;
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .section__title .line {
@@ -224,7 +261,7 @@ main .about__card--text {
 }
 
 main .about__card--text p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.5rem;
 }
 
@@ -245,6 +282,7 @@ main .tournament__wrappper {
 
 main .tournament__wrappper h4 {
   font-size: 1.6rem;
+  font-weight: 400;
   margin-bottom: 1rem;
 }
 
@@ -363,17 +401,10 @@ footer p {
     z-index: 999;
     left: 0;
   }
-  header nav .nav__wrapper {
-    width: 100%;
+  header nav .nav__btn {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   header nav .nav__logo {
     width: 64px;

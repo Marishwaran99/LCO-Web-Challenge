@@ -10,6 +10,7 @@ $color-primary: #AA67CF;
 
     margin: 0;
     padding: 0;
+    border: none;
     box-sizing: border-box;
     transition: all 0.25s;;
     
@@ -36,6 +37,8 @@ a{
 ul{
     list-style-type: none;
 }
+
+
 .container{
     width: 90%;
     margin: auto;
@@ -56,6 +59,31 @@ header{
                 display: flex;
                 justify-content:space-between;
                 align-items: center;
+            }
+            &__btn{
+                 
+                    background: none;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    justify-content: center;
+                    width: 48px;
+                    height: 48px;   display: none;
+                    div{
+                        margin-bottom: 6px;
+                    }
+                    div:nth-child(1){
+                        width: 36px;
+                        height: 4px;
+                        background-color:black;
+                        }
+
+                        div:nth-child(2){
+                            width: 24px;
+                            height: 4px;
+                            background-color:black;
+                            }
+                
             }
             &__logo{
                 width: 64px;
@@ -92,7 +120,7 @@ header{
     &__title{
         margin-top: 4rem;
         font-size: 2rem;
-        font-weight: 500;
+        font-weight: 600;
         .line{
             width: 50px;
             height: 5px;
@@ -188,7 +216,7 @@ main{
                     align-self: center;
                     grid-area: text;
                     p{
-                        font-size: 1rem;
+                        font-size: 1.2rem;
                         line-height: 1.5rem;
                     }
                 }
@@ -206,6 +234,7 @@ main{
 
             h4{
                 font-size: 1.6rem ;
+                font-weight: 400;
                 margin-bottom: 1rem;
                 img{
                     width: 12px;
@@ -313,11 +342,10 @@ footer{
         z-index: 999;
         left: 0;
             .nav{
-                &__wrapper{
-                    width: 100%;
+                
+                &__btn{
                     display: flex;
-                    justify-content:space-between;
-                    align-items: center;
+                
                 }
                 &__logo{
                     width: 64px;
