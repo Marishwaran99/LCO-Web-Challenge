@@ -151,21 +151,21 @@ main .landing__wrapper--img div:nth-child(1) {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: img1;
-  background-image: url("/assets/artimg-1.png");
+  background-image: url("../assets/artimg-1.png");
 }
 
 main .landing__wrapper--img div:nth-child(2) {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: img2;
-  background-image: url("/assets/artimg-2.png");
+  background-image: url("../assets/artimg-2.png");
 }
 
 main .landing__wrapper--img div:nth-child(3) {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: img3;
-  background-image: url("/assets/artimg-3.png");
+  background-image: url("../assets/artimg-3.png");
 }
 
 main .about__wrapper {
