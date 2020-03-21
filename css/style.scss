@@ -87,7 +87,7 @@ header{
     &__title{
         margin-top: 4rem;
         font-size: 2rem;
-        font-weight: 300;
+        font-weight: 500;
         .line{
             width: 50px;
             height: 5px;
@@ -114,7 +114,6 @@ main{
             align-self: center;
            h2{
                 font-size: 3.6rem;
-                font-weight: 500;
 
                 img{
                     width: 24px;
@@ -296,7 +295,7 @@ footer{
 
   @media screen and(max-width:768px){
       html{
-          font-size: 10px;
+          font-size: 12px;
       }
       header{    
         height: 72px;
@@ -354,7 +353,6 @@ footer{
           
                h2{
                     font-size: 3.6rem;
-                    font-weight: 500;
     
                     img{
                         width: 24px;
@@ -390,7 +388,9 @@ footer{
           
             .line{
                 width: 25px;
-               
+                height: 3px;
+            border: 3px solid #FF8F26;
+                
             }
         }
         
@@ -413,7 +413,6 @@ footer{
           
                h2{
                     font-size: 3.6rem;
-                    font-weight: 500;
     
                     img{
                         width: 24px;

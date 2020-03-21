@@ -98,7 +98,7 @@ header nav .nav__link:hover {
 .section__title {
   margin-top: 4rem;
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .section__title .line {
@@ -128,7 +128,6 @@ main .landing__wrapper--text {
 
 main .landing__wrapper--text h2 {
   font-size: 3.6rem;
-  font-weight: 500;
 }
 
 main .landing__wrapper--text h2 img {
@@ -346,7 +345,7 @@ footer p {
 
 @media screen and (max-width: 768px) {
   html {
-    font-size: 10px;
+    font-size: 12px;
   }
   header {
     height: 72px;
@@ -409,7 +408,6 @@ footer p {
   }
   main .landing__wrapper--text h2 {
     font-size: 3.6rem;
-    font-weight: 500;
   }
   main .landing__wrapper--text h2 img {
     width: 24px;
@@ -435,6 +433,8 @@ footer p {
 @media screen and (max-width: 425px) {
   .section__title .line {
     width: 25px;
+    height: 3px;
+    border: 3px solid #FF8F26;
   }
   main .landing__wrapper {
     display: -ms-grid;
@@ -459,7 +459,6 @@ footer p {
   }
   main .landing__wrapper--text h2 {
     font-size: 3.6rem;
-    font-weight: 500;
   }
   main .landing__wrapper--text h2 img {
     width: 24px;
