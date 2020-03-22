@@ -21,6 +21,7 @@ for (let i = 0; i < nav_link_list.length; i++) {
 	nav_link_list[i].addEventListener('click', function() {
 		removeActive();
 		nav_link_list[i].classList.add('active');
+		nav_links.classList.remove('active');
 	});
 }
 
