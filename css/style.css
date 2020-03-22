@@ -85,24 +85,24 @@ header nav .nav__btn {
 }
 
 header nav .nav__btn div {
-  margin-bottom: 8px;
+  margin-bottom: 5px;
 }
 
 header nav .nav__btn div:nth-child(1) {
-  width: 48px;
-  height: 4px;
+  width: 36px;
+  height: 3px;
   background-color: black;
 }
 
 header nav .nav__btn div:nth-child(2) {
   width: 36px;
-  height: 4px;
+  height: 3px;
   background-color: black;
 }
 
 header nav .nav__btn div:nth-child(3) {
   width: 24px;
-  height: 4px;
+  height: 3px;
   background-color: black;
 }
 
@@ -279,7 +279,7 @@ main .about__card--text {
 
 main .about__card--text p {
   font-size: 1.2rem;
-  line-height: 1.5rem;
+  line-height: 1.75rem;
 }
 
 main .about__card:last-child {
@@ -324,7 +324,7 @@ main .faq__wrapper h4 {
 main .faq__wrapper p {
   font-size: 1.2rem;
   max-width: 800px;
-  line-height: 2rem;
+  line-height: 1.75rem;
 }
 
 main .faq__question {
@@ -360,6 +360,7 @@ main .contact__card h4 {
 
 main .contact__card p {
   font-size: 1.2rem;
+  line-height: 1.75rem;
 }
 
 main .contact .social-icons {
@@ -390,7 +391,8 @@ footer {
 }
 
 footer p {
-  font-weight: 500;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .carousel {
@@ -591,8 +593,7 @@ footer p {
     grid-area: text;
   }
   main .about__card--text p {
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 1.4rem;
   }
   main .about__card:last-child {
     margin-bottom: 0;

@@ -69,23 +69,23 @@ header{
                     width: 48px;
                     height: 48px;   display: none;
                     div{
-                        margin-bottom: 8px;
+                        margin-bottom: 5px;
                     }
                     div:nth-child(1){
-                        width: 48px;
-                        height: 4px;
+                        width: 36px;
+                        height: 3px;
                         background-color:black;
                         }
 
                         div:nth-child(2){
                             width: 36px;
-                            height: 4px;
+                            height: 3px;
                             background-color:black;
                             }
 
                             div:nth-child(3){
                                 width: 24px;
-                                height: 4px;
+                                height: 3px;
                                 background-color:black;
                                 }
                 
@@ -230,7 +230,7 @@ main{
                     grid-area: text;
                     p{
                         font-size: 1.2rem;
-                        line-height: 1.5rem;
+                        line-height: 1.75rem;
                     }
                 }
         }
@@ -256,6 +256,7 @@ main{
             }
             p{
                 font-size: 1.2rem;
+
             }
         }
     }
@@ -275,7 +276,7 @@ main{
             p{
                 font-size: 1.2rem;
                 max-width: 800px;
-                line-height: 2rem;
+                line-height: 1.75rem;
             }
         }
         &__question{
@@ -300,6 +301,8 @@ main{
             }
             p{
                 font-size: 1.2rem;
+                line-height: 1.75rem;
+
             }
         }
         
@@ -328,7 +331,9 @@ footer{
     background-color: $color-orange;
     padding: 1rem 0;
     p{
-        font-weight: 500;
+        font-weight: bold;
+        letter-spacing: 1px
+        ;
     }
 }
 
@@ -533,8 +538,7 @@ footer{
                         align-self: center;
                         grid-area: text;
                         p{
-                            font-size: 1rem;
-                            line-height: 1.5rem;
+                            font-size: 1.4rem;
                         }
                     }
             }
