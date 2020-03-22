@@ -42,16 +42,12 @@ ul {
   margin: auto;
 }
 
-header {
-  height: 72px;
-}
-
 header nav {
+  height: 72px;
   width: 100%;
   position: fixed;
   background-color: white;
   top: 0;
-  right: 0;
   z-index: 999;
   left: 0;
 }
@@ -140,7 +136,6 @@ header nav .nav__link:hover {
 }
 
 .section__title {
-  margin-top: 4rem;
   font-size: 2rem;
   font-weight: 600;
 }
@@ -154,6 +149,19 @@ header nav .nav__link:hover {
 
 img {
   width: 100%;
+}
+
+.break {
+  height: 80px;
+}
+
+main {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+main .landing {
+  margin-top: 72px;
 }
 
 main .landing__wrapper {
@@ -391,9 +399,6 @@ footer p {
 @media screen and (max-width: 768px) {
   html {
     font-size: 12px;
-  }
-  header {
-    height: 72px;
   }
   header nav {
     width: 100%;
