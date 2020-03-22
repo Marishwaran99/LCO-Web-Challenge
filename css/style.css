@@ -613,8 +613,8 @@ footer p {
     grid-gap: 2rem 2rem;
     -ms-grid-columns: none;
         grid-template-columns: none;
-    -ms-grid-rows: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+    -ms-grid-rows: 0.5fr 1fr 0.5fr;
+        grid-template-rows: 0.5fr 1fr 0.5fr;
   }
   main .contact__card {
     display: -webkit-box;
@@ -640,6 +640,10 @@ footer p {
   main .contact .social-icons img {
     width: 24px;
     margin-right: 1rem;
+  }
+  main .contact .social-icons .video__wrapper h4 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
   }
   main .contact .social-icons .video__wrapper iframe {
     width: 100%;
