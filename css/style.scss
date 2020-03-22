@@ -139,7 +139,8 @@ header{
     
 }
 img{
-    width: 100%;
+    display: block;
+    max-width: 100%;;
 }
 .break{
     height: 80px;
@@ -251,6 +252,7 @@ main{
                 margin-bottom: 1rem;
                 img{
                     width: 12px;
+                    display: flex;
                     margin:0 1px;
                 }
             }
@@ -538,7 +540,8 @@ footer{
                         align-self: center;
                         grid-area: text;
                         p{
-                            font-size: 1.4rem;
+                            font-size: 1.2rem;
+                            line-height: 1.75rem;
                         }
                     }
             }

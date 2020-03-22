@@ -159,7 +159,8 @@ header nav .nav__link.active {
 }
 
 img {
-  width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
 .break {
@@ -305,6 +306,9 @@ main .tournament__wrappper h4 {
 
 main .tournament__wrappper h4 img {
   width: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 0 1px;
 }
 
@@ -593,7 +597,8 @@ footer p {
     grid-area: text;
   }
   main .about__card--text p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    line-height: 1.75rem;
   }
   main .about__card:last-child {
     margin-bottom: 0;
