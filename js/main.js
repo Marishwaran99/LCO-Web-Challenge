@@ -1,4 +1,18 @@
 $(document).ready(function() {
+	$('.nav__btn').click(function(e) {
+		$('.nav__links').toggleClass('active');
+		e.stopPropagation();
+	});
+	$(document).click(function() {
+		if ($('.nav__links').hasClass('active')) {
+			$('.nav__links').removeClass('active');
+		}
+	});
+	$('.nav__link').click(function() {
+		$('.nav__link').removeClass('active');
+		$(this).addClass('active');
+		$('.nav__links').removeClass('active');
+	});
 	$('.carousel').slick({
 		slidesToShow : 3,
 		dots         : true,

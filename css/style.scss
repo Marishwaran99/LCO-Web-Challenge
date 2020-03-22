@@ -51,8 +51,6 @@ header{
     position: fixed;
     background-color: white;
     top: 0;
-  
-    z-index: 999;
     left: 0;
         .nav{
             &__wrapper{
@@ -71,29 +69,36 @@ header{
                     width: 48px;
                     height: 48px;   display: none;
                     div{
-                        margin-bottom: 6px;
+                        margin-bottom: 8px;
                     }
                     div:nth-child(1){
-                        width: 36px;
+                        width: 48px;
                         height: 4px;
                         background-color:black;
                         }
 
                         div:nth-child(2){
-                            width: 24px;
+                            width: 36px;
                             height: 4px;
                             background-color:black;
                             }
+
+                            div:nth-child(3){
+                                width: 24px;
+                                height: 4px;
+                                background-color:black;
+                                }
                 
             }
             &__logo{
-                width: 64px;
+                width: 70px;
             }
             &__item{
                 padding: 1rem;
             }
             &__links{
                 display: flex;
+                transition: 0.3s;
             }
 
             &__link{
@@ -101,6 +106,9 @@ header{
                 font-size: 1.2rem;
                 &:hover{
                 
+                    color: $color-orange;
+                }
+                &.active{
                     color: $color-orange;
                 }
             }
@@ -140,7 +148,7 @@ main{
     width: 100vw;
     overflow-x: hidden;
     .landing{ 
-        margin-top: 72px;
+      
         &__wrapper{
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -365,12 +373,23 @@ footer{
                     width: 64px;
                 }
                 &__item{
+                    display: block;
                     padding: 1rem;
                 }
                 &__links{
-                    display: none;
-                }
-    
+                    background-color: white;
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    top:72px;
+                    left: -100vh;
+                    width: 100%;
+                    text-align: center;
+                    &.active{
+                        left: 0;
+                    }
+                }   
+                
                 &__link{
                     
                     font-size: 1.2rem;

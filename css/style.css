@@ -48,7 +48,6 @@ header nav {
   position: fixed;
   background-color: white;
   top: 0;
-  z-index: 999;
   left: 0;
 }
 
@@ -86,23 +85,29 @@ header nav .nav__btn {
 }
 
 header nav .nav__btn div {
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
 header nav .nav__btn div:nth-child(1) {
-  width: 36px;
+  width: 48px;
   height: 4px;
   background-color: black;
 }
 
 header nav .nav__btn div:nth-child(2) {
+  width: 36px;
+  height: 4px;
+  background-color: black;
+}
+
+header nav .nav__btn div:nth-child(3) {
   width: 24px;
   height: 4px;
   background-color: black;
 }
 
 header nav .nav__logo {
-  width: 64px;
+  width: 70px;
 }
 
 header nav .nav__item {
@@ -113,6 +118,8 @@ header nav .nav__links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 header nav .nav__link {
@@ -120,6 +127,10 @@ header nav .nav__link {
 }
 
 header nav .nav__link:hover {
+  color: #FF8F26;
+}
+
+header nav .nav__link.active {
   color: #FF8F26;
 }
 
@@ -158,10 +169,6 @@ img {
 main {
   width: 100vw;
   overflow-x: hidden;
-}
-
-main .landing {
-  margin-top: 72px;
 }
 
 main .landing__wrapper {
@@ -427,10 +434,26 @@ footer p {
     width: 64px;
   }
   header nav .nav__item {
+    display: block;
     padding: 1rem;
   }
   header nav .nav__links {
-    display: none;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    top: 72px;
+    left: -100vh;
+    width: 100%;
+    text-align: center;
+  }
+  header nav .nav__links.active {
+    left: 0;
   }
   header nav .nav__link {
     font-size: 1.2rem;
