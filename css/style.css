@@ -333,15 +333,26 @@ main .team__wrapper {
       grid-template-columns: repeat(3, 1fr);
 }
 
-main .team__wrapper div {
+main .team__wrapper .team__card {
+  width: 100%;
+}
+
+main .team__wrapper .team__card div {
   width: 100%;
   height: 300px;
   overflow: hidden;
 }
 
-main .team__wrapper div img {
+main .team__wrapper .team__card div img {
   display: inherit;
-  max-width: none;
+  max-width: 100%;
+  height: 100%;
+}
+
+main .team__wrapper .team__card h4 {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 1rem;
 }
 
 main .faq__wrapper h4 {
@@ -486,7 +497,7 @@ footer p {
     left: 0;
   }
   header nav .nav__link {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
   header nav .nav__link:hover {
     color: #FF8F26;
@@ -592,14 +603,24 @@ footer p {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
-  main .team__wrapper div {
+  main .team__wrapper .team__card {
+    width: 100%;
+  }
+  main .team__wrapper .team__card div {
     width: 100%;
     height: 250px;
     overflow: hidden;
   }
-  main .team__wrapper div img {
+  main .team__wrapper .team__card div img {
+    width: 100%;
     display: inherit;
-    max-width: none;
+    max-width: 100%;
+    height: 100%;
+  }
+  main .team__wrapper .team__card h4 {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 1rem;
   }
 }
 
@@ -650,14 +671,8 @@ footer p {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
   }
-  main .team__wrapper div {
-    width: 100%;
+  main .team__wrapper .team__card div {
     height: 200px;
-    overflow: hidden;
-  }
-  main .team__wrapper div img {
-    display: inherit;
-    max-width: none;
   }
   main .contact__wrapper {
     display: -ms-grid;
