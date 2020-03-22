@@ -38,6 +38,7 @@ ul {
 }
 
 .container {
+  max-width: 1140px;
   width: 90%;
   margin: auto;
 }
@@ -49,6 +50,7 @@ header nav {
   background-color: white;
   top: 0;
   left: 0;
+  z-index: 999;
 }
 
 header nav .nav__wrapper {
@@ -158,11 +160,6 @@ header nav .nav__link.active {
   margin-bottom: 2rem;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-}
-
 .icon {
   display: inherit;
 }
@@ -176,6 +173,12 @@ main {
   overflow-x: hidden;
 }
 
+main .landing {
+  width: 90%;
+  max-width: 1140px;
+  margin: auto;
+}
+
 main .landing__wrapper {
   display: -ms-grid;
   display: grid;
@@ -184,7 +187,6 @@ main .landing__wrapper {
 }
 
 main .landing__wrapper--text {
-  margin-left: 10%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -267,10 +269,13 @@ main .about__card--img {
   -ms-grid-column: 1;
   grid-area: img;
   width: 100%;
-  height: 250px;
+  height: 300px;
   overflow: hidden;
-  -o-object-fit: cover;
-     object-fit: cover;
+}
+
+main .about__card--img img {
+  display: inherit;
+  max-width: none;
 }
 
 main .about__card--text {
@@ -320,8 +325,23 @@ main .tournament__wrappper p {
   font-size: 1.2rem;
 }
 
-main .team__carousel img {
+main .team__wrapper {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2rem 2rem;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+main .team__wrapper div {
+  width: 100%;
   height: 300px;
+  overflow: hidden;
+}
+
+main .team__wrapper div img {
+  display: inherit;
+  max-width: none;
 }
 
 main .faq__wrapper h4 {
@@ -384,7 +404,7 @@ main .contact .social-icons img {
 
 main .contact .video__wrapper h4 {
   margin: 2rem 0;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 main .contact .video__wrapper iframe {
@@ -458,7 +478,7 @@ footer p {
             flex-direction: column;
     position: absolute;
     top: 72px;
-    left: -100vh;
+    left: -200vh;
     width: 100%;
     text-align: center;
   }
