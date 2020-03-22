@@ -142,6 +142,10 @@ img{
     display: block;
     max-width: 100%;;
 }
+
+.icon{
+    display: inherit;
+}
 .break{
     height: 80px;
 }
@@ -302,7 +306,7 @@ main{
                 margin-bottom: 1rem;
             }
             p{
-                font-size: 1.2rem;
+                font-size: 1.4rem;
                 line-height: 1.75rem;
 
             }
@@ -561,11 +565,11 @@ footer{
                 display: flex;
                 flex-direction: column;
                 h4{
-                    font-size: 1.2rem;
+                    font-size: 1.4rem;
                     margin-bottom: 1rem;
                 }
                 p{
-                    font-size: 1.2rem;
+                    font-size: 1.4rem;
                 }
             }
             

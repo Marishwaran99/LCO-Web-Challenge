@@ -163,6 +163,10 @@ img {
   max-width: 100%;
 }
 
+.icon {
+  display: inherit;
+}
+
 .break {
   height: 80px;
 }
@@ -363,7 +367,7 @@ main .contact__card h4 {
 }
 
 main .contact__card p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   line-height: 1.75rem;
 }
 
@@ -622,11 +626,11 @@ footer p {
             flex-direction: column;
   }
   main .contact__card h4 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-bottom: 1rem;
   }
   main .contact__card p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   main .contact .social-icons {
     display: -webkit-box;
